@@ -1,0 +1,18 @@
+.doctor-list-page .container .page-content-card .doctor-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.doctor-list-page .container .page-content-card .doctor-card-wrapper .doctor-card {
+  flex-basis: 380px;
+  flex-grow: 1;
+}
+.doctor-list-page .container .page-content-card .pagination-wrapper {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+}/*# sourceMappingURL=admin-doctor-list-page.css.map */

@@ -1,0 +1,139 @@
+@import '_var.scss';
+
+.clinic-detail-page {
+
+    .map-hero-container {
+    width: 100%;
+    height: 230px;
+    background-color: $PrimaryDark;
+    }
+
+    section.info-body-container {
+        background-color: $SecondaryWhite;
+
+        .info-body-wrapper {
+            display: flex;
+            flex-direction: row;
+            column-gap: 20px;
+            row-gap: 10px;
+            flex-wrap: wrap-reverse;
+
+            .image-wrapper {
+                flex-basis: 600px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                
+                .image-container {
+                    flex-grow: 1;
+                    // width: 320px;
+                    height: fit-content;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                        &.hide {
+                            display: none;
+                        }
+                    }
+                }
+
+                .row-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    flex-wrap: wrap;
+
+                    .image-container {
+                        height: 80px;
+                        width: fit-content;
+                        flex-grow: 1;
+                        // flex-grow: 1;
+
+                        &.focus, &:hover {
+                            filter: brightness(50%);
+                            border: 2px solid $PrimaryBlue;
+                        }
+                    }
+                }
+
+            }
+
+            .info-wrapper {
+                flex-basis: 600px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .page-title {
+                    color: $TextLighter;
+                }
+
+                .clinic-name {
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    letter-spacing: 2px;
+                    margin: 0;
+                }
+
+                .operation-time {
+                    letter-spacing: 4px;
+                    font-weight: 600;
+                    color: $PrimaryBlue;
+                }
+
+                .description {
+                    text-indent: 20px;
+                    text-align: justify;
+                }
+            }
+
+        }
+    }
+
+    section.doctor-list-container {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+    
+            .page-title {
+                color: $PrimaryBlue;
+            }
+            
+            .doctors-card-wrapper {
+                // display: flex;
+                // flex-direction: row;
+                // gap: 20px;
+                // flex-wrap: wrap;
+                // justify-content: space-between;
+
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                grid-gap: 20px;
+
+                .empty-container {
+                    @include empty-container();
+                }
+            }
+            
+        }
+    }
+
+
+
+}
+
+
+
+
+
+
+
+

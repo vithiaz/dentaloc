@@ -1,0 +1,50 @@
+.news-list-page .container .page-content-card .doctor-card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.news-list-page .container .page-content-card .doctor-card-wrapper .doctor-card {
+  flex-basis: 380px;
+  flex-grow: 1;
+}
+.news-list-page .container .page-content-card .pagination-wrapper {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+}
+.news-list-page .container .page-content-card .edit-button {
+  background-color: #2A2A2A;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.news-list-page .container .page-content-card .edit-button:hover {
+  background-color: #1B75BC;
+  color: black;
+}
+.news-list-page .container .page-content-card .edit-button.ico span {
+  margin-left: 8px;
+}
+.news-list-page .container .page-content-card .edit-button.hovered span {
+  display: block;
+  max-width: 0vw;
+  overflow: hidden;
+  transition: max-width ease-in-out 0.5s;
+  white-space: nowrap;
+  margin: 0;
+  text-indent: 10px;
+}
+.news-list-page .container .page-content-card .edit-button.hovered:hover span {
+  max-width: 200vw;
+}
+.news-list-page .container .page-content-card .table-button {
+  font-size: 0.9rem;
+}/*# sourceMappingURL=admin-news-list-page.css.map */

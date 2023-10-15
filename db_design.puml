@@ -1,0 +1,68 @@
+@startuml
+
+entity clinics {
+    * id UID PRIMARYKEY
+    --
+    * name STRING
+    * long STRING
+    * lat STRING
+    * open_time TIME
+    * closed_time TIME
+    description TEXT
+    --
+    * created_at DATETIME
+    * updated_at DATETIME
+}
+
+entity clinic_images {
+    * id BIGINTEGER PRIMARYKEY
+    --
+    * clinic_id UID FOREIGN(clinics.id)
+    * image STRING
+    --
+    * created_at DATETIME
+    * updated_at DATETIME
+}
+
+entity clinic_doctors {
+    * id UID PRIMARYKEY
+    --
+    * doctor_id UID FOREIGN(doctors.id)
+    * clinic_id UID FOREIGN(clinics.id)
+    * operation_start TIME
+    * operation_end TIME
+    --
+    * created_at DATETIME
+    * updated_at DATETIME
+
+}
+
+entity doctors {
+    * id UID PRIMARYKEY
+    --
+    * name STRING
+    ' * specialist STRING
+    image STRING
+    --
+    * created_at DATETIME
+    * updated_at DATETIME
+}
+
+entity news {
+    * id UID PRIMARYKEY
+    --
+    * title TEXT
+    * body TEXT
+    image STRING
+    --
+    * created_at DATETIME
+    * updated_at DATETIME
+}
+
+clinics ||--o{ clinic_images
+
+clinics ||--o{ clinic_doctors
+doctors ||--o{ clinic_doctors
+
+
+@enduml

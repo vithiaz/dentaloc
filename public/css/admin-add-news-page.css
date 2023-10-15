@@ -1,0 +1,157 @@
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: unset;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper small.error {
+  color: red;
+  text-indent: 5px;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper.top-align {
+  align-items: flex-start;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper .form-items {
+  flex-grow: 1;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper .form-items.row {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin: 0;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper .form-items.row input {
+  max-width: 130px;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper .form-items.row .separator-line {
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  font-weight: 600;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper .form-items.row .error {
+  padding: 0;
+  text-indent: 5px;
+  flex-basis: 100%;
+}
+.add-news-page .container .page-content-card .row-wrapper .form-wrapper .form-input-wrapper textarea {
+  min-height: 220px;
+}
+.add-news-page .container .page-content-card .image-uploads-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 1/1;
+  background-color: #EDF0F3;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container .hover-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all ease-in-out 0.3s;
+  opacity: 0;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container .hover-overlay i {
+  font-size: 1.5rem;
+  color: #FF1616;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container:hover {
+  cursor: pointer;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container:hover .hover-overlay {
+  opacity: 1;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container:hover img {
+  transform: scale(1.2);
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container#image-upload-triggered, .add-news-page .container .page-content-card .image-uploads-container .image-container.image-upload-triggered {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: unset;
+  height: 80px;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container#image-upload-triggered *, .add-news-page .container .page-content-card .image-uploads-container .image-container.image-upload-triggered * {
+  color: #747474;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container#image-upload-triggered i, .add-news-page .container .page-content-card .image-uploads-container .image-container.image-upload-triggered i {
+  font-size: 2rem;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container#image-upload-triggered:hover, .add-news-page .container .page-content-card .image-uploads-container .image-container.image-upload-triggered:hover {
+  cursor: pointer;
+  background-color: #e7ebef;
+}
+.add-news-page .container .page-content-card .image-uploads-container .image-container#image-upload-triggered:hover *, .add-news-page .container .page-content-card .image-uploads-container .image-container.image-upload-triggered:hover * {
+  color: #1B75BC;
+}
+.add-news-page .container .page-content-card .editor-container {
+  width: 100%;
+  height: fit-content;
+}
+.add-news-page .container .page-content-card .editor-container #editor {
+  width: 100%;
+  height: fit-content;
+  min-height: 350px;
+}
+.add-news-page .container .page-content-card .button-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.add-news-page .container .page-content-card .button-wrapper .submit-button {
+  background-color: #1B75BC;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.add-news-page .container .page-content-card .button-wrapper .submit-button:hover {
+  background-color: #09DA96;
+  color: white;
+}
+.add-news-page .container .page-content-card .button-wrapper .submit-button.ico span {
+  margin-left: 8px;
+}
+.add-news-page .container .page-content-card .button-wrapper .submit-button.hovered span {
+  display: block;
+  max-width: 0vw;
+  overflow: hidden;
+  transition: max-width ease-in-out 0.5s;
+  white-space: nowrap;
+  margin: 0;
+  text-indent: 10px;
+}
+.add-news-page .container .page-content-card .button-wrapper .submit-button.hovered:hover span {
+  max-width: 200vw;
+}/*# sourceMappingURL=admin-add-news-page.css.map */

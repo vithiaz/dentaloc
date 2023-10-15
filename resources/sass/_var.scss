@@ -1,0 +1,76 @@
+$PrimaryRed: #FF1616;
+$PrimaryBlue: #1B75BC;
+$PrimaryBlue75: #1b76bcd4;
+$PrimaryGreen: #09DA96;
+$PrimaryDark: #2A3034;
+
+$BorderLight: #CCCCCC;
+$TextLighter: #5F5F5F;
+$SecondaryWhite: #F6F6F6;
+
+$BoxShadow: 0px 3px 6px rgba(0,0,0,0.2);
+
+
+@mixin section-title() {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+@mixin button-default-ic($bg: black, $color: white, $bg_hover: white, $color_hover: black) {
+    background-color: $bg;
+    font-weight: 600;
+    color: $color;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &:hover {
+        background-color: $bg_hover;
+        color: $color_hover;
+    }
+    
+    &.ico {
+
+        span {
+            margin-left: 8px;
+        }
+    }
+
+
+    &.hovered {
+        
+        span {
+            display: block;
+            max-width: 0vw;
+            overflow: hidden;
+            transition: max-width ease-in-out 0.5s;
+            white-space: nowrap;
+            margin: 0;
+            text-indent: 10px;
+        }
+
+        &:hover {
+            
+            span {
+                max-width: 200vw;
+            }
+        }
+    }
+
+}
+
+
+@mixin empty-container() {
+    display: grid;
+    place-items: center;
+    height: 120px;
+    width: 100%;
+    
+    span {
+        color: $TextLighter;
+    }
+}

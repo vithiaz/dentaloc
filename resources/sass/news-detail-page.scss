@@ -1,0 +1,85 @@
+@import '_var.scss';
+
+.news-detail-page {
+
+    section {
+        padding: 20px 0;
+    }
+
+    section.news-detail {
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            
+            .head-wrapper {
+                display: flex;
+                flex-direction: row;
+                column-gap: 20px;
+                row-gap: 10px;
+                flex-wrap: wrap-reverse;
+
+                .head-content {
+                    flex-grow: 1;
+                    flex-basis: 550px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    gap: 20px;
+
+                    .title {
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        font-size: 1rem;
+                    }
+                    
+                    .news-title-wrapper {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+
+                        .news-date {
+                            color: $PrimaryBlue;
+                            font-weight: 600;
+                        }
+
+                        .news-title {
+                            font-weight: 600;
+                            font-size: 1.3rem;
+                            letter-spacing: 1px;
+                            text-align: justify;
+                            text-indent: 20px;
+                        }
+                    }
+                }
+
+                .image-container {
+                    flex-basis: 450px;
+                    flex-grow: 1;
+                }
+            }
+
+            .content-wrapper {
+                text-align: justify;
+                text-indent: 20px;
+            }
+
+        }
+    }
+
+    section.other-news {
+
+        .container {
+
+            .section-title {
+                @include section-title();
+            }
+        }
+    }
+
+}

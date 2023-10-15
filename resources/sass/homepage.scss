@@ -1,0 +1,85 @@
+@import '_var.scss';
+
+.homepage {
+    padding: 20px 0;
+    position: relative;
+    
+    .clinic-list {
+        background-color: #F6F6F6;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        
+        .container {
+            position: relative;
+
+            .section-title {
+                font-weight: 600;
+                color: #5F5F5F;
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+            }
+
+            .clinicSwiper {
+                padding: 20px 0;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    height: calc((100% - 30px) / 2) !important;
+                    text-decoration: none;
+                    color: black;
+                    border: 1px solid transparent;
+
+                    &:hover {
+                        border: 1px solid $PrimaryBlue;
+                    }
+              
+                    /* Center slide text vertically */
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                }
+
+                .product-swiper-pagination {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+            }
+
+        }
+    
+    }
+
+    .description {
+        background-size: cover;
+
+        .row-wrapper {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            .description-wrapper {
+                background-color: rgba(255,255,255, 0.6);
+                flex-basis: 350px;
+                padding: 20px;
+                
+                p {
+                    margin: 0;
+                }
+            }
+
+            .image-wrapper {
+                flex-grow: 1;
+            }
+        }
+    }
+
+}

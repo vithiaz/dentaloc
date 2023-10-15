@@ -1,0 +1,82 @@
+.clinic-list-page .container .page-content-card .clinics-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .clinic-info-wrapper {
+  width: 100%;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .clinic-info-wrapper .clinic-name {
+  font-size: 1.1rem;
+  color: #1B75BC;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .clinic-info-wrapper .hours {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .clinic-map-wrapper {
+  flex-grow: 1;
+  width: 50%;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .clinic-map-wrapper .clinic-map {
+  background-color: #EDF0F3;
+  width: 100%;
+  height: 100%;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
+  transition: all ease-in-out 0.3s;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box .edit-button {
+  background-color: #09DA96;
+  font-weight: 600;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box .edit-button:hover {
+  background-color: #09DA96;
+  color: black;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box .edit-button.ico span {
+  margin-left: 8px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box .edit-button.hovered span {
+  display: block;
+  max-width: 0vw;
+  overflow: hidden;
+  transition: max-width ease-in-out 0.5s;
+  white-space: nowrap;
+  margin: 0;
+  text-indent: 10px;
+}
+.clinic-list-page .container .page-content-card .clinics-wrapper .clinic-card .button-wrapper .a-button-box .edit-button.hovered:hover span {
+  max-width: 200vw;
+}/*# sourceMappingURL=admin-clinic-list-page.css.map */

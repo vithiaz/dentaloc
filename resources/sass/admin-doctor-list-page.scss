@@ -1,0 +1,31 @@
+@import '_var_admin.scss';
+
+.doctor-list-page {
+
+    .container {
+
+        .page-content-card {
+
+            .doctor-card-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .doctor-card {
+                    flex-basis: 380px;
+                    flex-grow: 1;
+                }
+            }
+
+            .pagination-wrapper {
+                width: 100%;
+                display: grid;
+                place-items: center;
+                padding: 20px 0;
+            }
+        }
+    }
+}

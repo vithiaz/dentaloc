@@ -1,0 +1,39 @@
+@import '_var_admin.scss';
+
+.news-list-page {
+
+    .container {
+
+        .page-content-card {
+
+            .doctor-card-wrapper {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .doctor-card {
+                    flex-basis: 380px;
+                    flex-grow: 1;
+                }
+            }
+
+            .pagination-wrapper {
+                width: 100%;
+                display: grid;
+                place-items: center;
+                padding: 20px 0;
+            }
+
+            .edit-button {
+                @include button-default-ic($bg: $PrimaryDark, $color: white, $bg_hover: $PrimaryBlue, $color_hover: black);
+            }
+
+            .table-button {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

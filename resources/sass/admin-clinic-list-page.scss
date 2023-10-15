@@ -1,0 +1,78 @@
+@import '_var_admin.scss';
+
+.clinic-list-page {
+
+    .container {
+
+        .page-content-card {
+
+            .clinics-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .clinic-card {
+                    width: 100%;
+                    min-height: 150px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .clinic-info-wrapper {
+                        width: 100%;
+                        flex-basis: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        .clinic-name {
+                            font-size: 1.1rem;
+                            color: $PrimaryBlue;
+                            text-transform: uppercase;
+                            letter-spacing: 4px;
+                        }
+
+                        .hours {
+                            letter-spacing: 2px;
+                            font-weight: 600;
+                        }
+                    }
+                    
+                    .clinic-map-wrapper {
+                        flex-grow: 1;
+                        width: 50%;
+                        height: 150px;
+                        border-radius: 4px;
+                        overflow: hidden;
+                        
+                        .clinic-map {
+                            background-color: $LightWhite;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .button-wrapper {
+                        width: 100%;
+                        margin-top: 20px;
+
+                        .a-button-box {
+                            display: block;
+                            width: fit-content;
+                            height: fit-content;
+                            text-decoration: none;
+                            transition: all ease-in-out 0.3s;
+
+                            
+                            .edit-button {
+                                @include button-default-ic($bg: $PrimaryGreen, $color: white, $bg_hover: $PrimaryGreen, $color_hover: black);
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
