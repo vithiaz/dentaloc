@@ -9,20 +9,21 @@
 
 ## Dentaloc Installation Guide
 Program Dependencies:
-- [NPM version 9.5
-- [Composer version 2.5
+- php version 8.1
+- NPM version 9.5
+- Composer version 2.5
 
 Configuration Guide
-- [Copy and rename file .env.example to .env
-- [in .env file, Set DB_DATABASE, DB_USERNAME, and DB_PASSWORD based on your local database credentials
+- Copy and rename file .env.example to .env
+- in .env file, Set DB_DATABASE, DB_USERNAME, and DB_PASSWORD based on your local database credentials
 
 Next step, open project files in terminal then run :
-- [$ composer update
-- [$ php artisan key:generate
-- [$ php artisan storage:link
-- [$ php artisan migrate
-- [$ php artisan db:seed --class=DatabaseSeeder
-- [note that the admin default credentials is generated in seeder file located in database/seeders/DatabaseSeeder.php
+- $ composer update
+- $ php artisan key:generate
+- $ php artisan storage:link
+- $ php artisan migrate
+- $ php artisan db:seed --class=DatabaseSeeder
+- note that the admin default credentials is generated in seeder file located in database/seeders/DatabaseSeeder.php
 
 To run the app, make sure the Database Server is running then run:
-- [$ php artisan serve
+- $ php artisan serve
