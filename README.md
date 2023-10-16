@@ -9,8 +9,8 @@
 
 ## Dentaloc Installation Guide
 Program Dependencies:
-- php version 8.1
-- NPM version 9.5
+- php version 8.*
+- npm version 9.*
 - Composer version 2.5
 
 Configuration Guide
