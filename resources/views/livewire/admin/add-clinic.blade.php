@@ -44,16 +44,18 @@
                 <div class="form-wrapper">
                     <div class="form-input-wrapper row top-align">
                         <span class="form-title">Deskripsi</span>
-                        <div class="form-items">
+                        <div wire:ignore class="editor-container">
+                            <div id="editor"></div>
+                        </div>
+                        {{-- <div class="form-items">
                             <textarea wire:model='description' class="form-input-default" type="text" placeholder="Deskripsi klinik ..."></textarea>
                             @error('description')
                                 <small class="error">{{ $message }}</small>
                             @enderror
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
-
 
             <div class="row-wrapper">
                 <div class="form-wrapper">
@@ -207,3 +209,33 @@
     </script>
     
 </div>
+
+@push('script')
+<script>
+
+    $(document).ready(function () {
+        $('#editor').summernote({
+            placeholder: "Berita ...",
+            minHeight: 250,
+
+            toolbar: [
+                ['style', ['bold', 'italic', 'underline', 'clear']],
+                ['font', ['fontname', 'strikethrough', 'superscript', 'subscript']],
+                ['fontsize', ['fontsize']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['insert', ['link']],
+                ['misc', ['undo', 'redo']],
+            ],
+            callbacks: {
+                onChange: (contents, $editable) => {
+                    @this.set('description', contents);
+                }
+            },
+        });
+        $('.dropdown-toggle').dropdown();
+    });
+    
+</script>
+@endpush

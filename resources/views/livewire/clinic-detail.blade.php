@@ -24,7 +24,7 @@
                 <h1 class="clinic-name">{{ $this->Clinic['name'] }}</h1>
                 <span class="operation-time">{{ getHoursMinutes($this->Clinic['open_time']) }} - {{ getHoursMinutes($this->Clinic['closed_time']) }}</span>
                 <div class="description">
-                    {{ $this->Clinic['description'] }}
+                    {!! $this->Clinic['description'] !!}
                 </div>
             </div>
         </div>
